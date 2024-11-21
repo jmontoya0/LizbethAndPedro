@@ -1,0 +1,139 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+header.cover {
+    background: url('https://cdn0.bodas.com.mx/article-vendor/3829/original/1280/jpg/prueba-x-save-the-date-los-mejores-fotografos-de-bodas-mexico-37_5_253829-1570028577.jpeg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.cover-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    width: 100%;
+}
+
+.cover-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.cover-content p {
+    font-size: 1.2rem;
+}
+
+/* Secciones de contenido */
+section {
+    width: 100%;
+    padding: 3em 1em;
+}
+
+/* Sección de cuenta regresiva */
+.countdown {
+    background: url('https://cdn0.bodas.com.mx/article-vendor/3829/original/1280/jpg/prueba-x-save-the-date-los-mejores-fotografos-de-bodas-mexico-37_5_253829-1570028577.jpeg') center/cover no-repeat;
+    color: white;
+    height: 100vh;    
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; 
+}
+.countdown h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Añadir espacio debajo del título */
+}
+
+.countdown-timer {
+    color: #fff;
+    display: flex;
+    gap: 1rem; /* Espacio entre los elementos del temporizador */
+    justify-content: center; 
+}
+
+.countdown-content {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex; 
+    justify-content: center; 
+ }
+  
+  .countdown-content span {
+    margin: 0 5px;
+  }
+  
+  .countdown-labels {
+    font-size: 0.75rem;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .countdown-labels span {
+    margin: 0 5px;
+  }
+
+.message, .ceremony, .reception, .dress-code, .rsvp, .story {
+    background-color: white;
+    color: #333;
+}
+
+/* Galería de "Nuestra Historia" */
+.story-gallery {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+    flex-wrap: wrap;
+}
+
+.story-gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ceremony iframe, .reception iframe {
+    margin-top: 1em;
+    width: 100%;
+    height: 200px;
+    border: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .cover-content h1 {
+        font-size: 2rem;
+    }
+    
+    .cover-content p {
+        font-size: 1rem;
+    }
+
+    #countdown-timer {
+        font-size: 1.2rem;
+        flex-direction: column;
+    }
+
+    .story-gallery img {
+        width: 80px;
+        height: 80px;
+    }
+}
