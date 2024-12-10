@@ -1,4 +1,6 @@
 /* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,111 +8,216 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
     background-color: #f7f7f7;
     color: #333;
     text-align: center;
+    font-variation-settings: "wdth" 100;
+}
+
+svg {
+    margin: 10px 0px;
 }
 
 header.cover {
-    background: url('https://cdn0.bodas.com.mx/article-vendor/3829/original/1280/jpg/prueba-x-save-the-date-los-mejores-fotografos-de-bodas-mexico-37_5_253829-1570028577.jpeg') center/cover no-repeat;
+    background: url('./imagenes/DSC09251.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .cover-content {
-    background: rgba(0, 0, 0, 0.5);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    /*background: rgba(0, 0, 0, 0.5);*/
     padding: 2em;
     width: 100%;
 }
 
 .cover-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5em;
+    color: white;
+    font-size: 3em;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.75);
+    margin-bottom: 150px;
+    /* Sombra para destacar el texto */
 }
-
 .cover-content p {
-    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 /* Secciones de contenido */
 section {
     width: 100%;
-    padding: 3em 1em;
+    padding: 2.5em 1em 1em 1em;
 }
 
 /* Sección de cuenta regresiva */
 .countdown {
-    background: url('https://cdn0.bodas.com.mx/article-vendor/3829/original/1280/jpg/prueba-x-save-the-date-los-mejores-fotografos-de-bodas-mexico-37_5_253829-1570028577.jpeg') center/cover no-repeat;
+    background: url('./imagenes/DSC08937.jpg') center/cover no-repeat;
     color: white;
-    height: 100vh;    
+    height: 100vh;
     text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center; 
+    justify-content: center;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
 }
+
+.beso {
+    background: url('./imagenes/DSC09143.jpg') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.beso-tierno {
+    background: url('./imagenes/DSC08915.jpg') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.mirada {
+    background: url('./imagenes/DSC09045.jpg') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
 .countdown h2 {
     font-size: 2rem;
-    margin-bottom: 1rem; /* Añadir espacio debajo del título */
+    margin-bottom: 1rem;
+    /* Añadir espacio debajo del título */
 }
 
 .countdown-timer {
     color: #fff;
     display: flex;
-    gap: 1rem; /* Espacio entre los elementos del temporizador */
-    justify-content: center; 
+    gap: 1rem;
+    /* Espacio entre los elementos del temporizador */
+    justify-content: center;
 }
 
 .countdown-content {
     font-size: 1.5rem;
     font-weight: bold;
-    display: flex; 
-    justify-content: center; 
- }
-  
-  .countdown-content span {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown-content span {
     margin: 0 5px;
-  }
-  
-  .countdown-labels {
-    font-size: 0.75rem;
+}
+
+.countdown-labels {
+    font-size: 1.1rem;
     margin-top: 5px;
     display: flex;
     justify-content: center;
-  }
-  
-  .countdown-labels span {
-    margin: 0 5px;
-  }
+}
 
-.message, .ceremony, .reception, .dress-code, .rsvp, .story {
+.countdown-labels span {
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+.message {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.message,
+.ceremony,
+.reception,
+.dress-code,
+.rsvp,
+.story {
     background-color: white;
     color: #333;
 }
 
 /* Galería de "Nuestra Historia" */
 .story-gallery {
-    display: flex;
-    gap: 1em;
-    justify-content: center;
-    margin-top: 1em;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales para desktop */
+    gap: 1em; /* Espaciado entre las imágenes */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar la galería */
 }
 
+/* Imágenes cuadradas */
 .story-gallery img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 100%; /* Ocupar todo el ancho de la celda */
+    height: auto;
+    aspect-ratio: 1 / 1; /* Mantener proporción cuadrada */
+    object-fit: cover; /* Recortar si es necesario */
+    border-radius: 8px; /* Bordes redondeados */
+    display: block;
 }
 
-.ceremony iframe, .reception iframe {
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.modal-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.modal-navigation.left {
+    left: 10px;
+}
+
+.modal-navigation.right {
+    right: 10px;
+}
+
+.ceremony iframe,
+.reception iframe {
     margin-top: 1em;
     width: 100%;
     height: 200px;
@@ -121,19 +228,42 @@ section {
 @media (max-width: 768px) {
     .cover-content h1 {
         font-size: 2rem;
+        margin-bottom: 80px;
     }
-    
+
     .cover-content p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
-    #countdown-timer {
-        font-size: 1.2rem;
-        flex-direction: column;
+    .countdown-timer {
+        font-size: 1.3rem;
+        gap: 0.15rem;
     }
 
-    .story-gallery img {
-        width: 80px;
-        height: 80px;
+    .story-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales en mobile */
+        gap: 0.5em; /* Reducir espacio entre las imágenes */
     }
+
+    .countdown-labels {
+        font-size: 0.8rem;
+    }
+
+    header.cover,
+    .beso,
+    .countdown,
+    .beso-tierno,
+    .mirada {
+        height: 50vh;
+    }
+
+    .modal img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .modal-navigation {
+        font-size: 1.5rem;
+    }
+
 }
