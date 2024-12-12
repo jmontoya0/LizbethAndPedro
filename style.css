@@ -278,8 +278,8 @@ section {
     padding: 10px 20px;
     background-color: #295744;
     color: white;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 1em;
+    font-weight: normal;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
@@ -295,8 +295,8 @@ section {
     padding: 10px 20px;
     background-color: #295744;
     color: white;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 1em;
+    font-weight: normal;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
