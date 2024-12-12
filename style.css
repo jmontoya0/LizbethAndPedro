@@ -318,6 +318,10 @@ section {
     .ramo {
         background: url('./imagenes/DSC08953.jpg') center/cover no-repeat;
     }
+
+    .mano {
+        background: url('./imagenes/DSC09253.jpg') 0% 15%/cover no-repeat;
+    }
     
     .btn-rsvp, .btn-regalo {
         font-size: 0.9em;
